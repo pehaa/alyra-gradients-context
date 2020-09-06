@@ -1,3 +1,39 @@
+# A faire
+
+## Installer bootstrap5
+
+```bash
+yarn add bootstrap@next
+```
+
+## Mettre en place bootstrap5
+
+Comme dans todos app
+
+## Head
+
+Dans le ficher `public/index.html` configurerz la partie head (title, lang, meta)
+Vous pouvez aussi remplacer `favicon.ico`, `logo192.png` et `logo512.png`
+
+## Components
+
+Mettez en place un dossier `src/components` avec des components :
+
+- GradientsList
+- Gradient
+- GradientTitle
+- GradientPill
+- GradientCode
+- GradientHeader
+
+## Working App
+
+Le fichier contenant dans la liste de gradients se trouve dans `src/gradients.js`
+
+Utilisez le code des exercices et afin de reproduire l'ensemble dans votre app.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
