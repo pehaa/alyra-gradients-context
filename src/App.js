@@ -1,5 +1,4 @@
 import React from "react"
-import "./App.css"
 import { gradients } from "./gradients"
 import GradientsList from "./components/GradientsList"
 import GradientsHeader from "./components/GradientsHeader"
