@@ -12,7 +12,7 @@ Comme dans todos app
 
 ## Head
 
-Dans le ficher `public/index.html` configurerz la partie head (title, lang, meta)
+Dans le ficher `public/index.html` configurez la partie head (title, lang, meta)
 Vous pouvez aussi remplacer `favicon.ico`, `logo192.png` et `logo512.png`
 
 ## Components
