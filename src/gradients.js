@@ -127,7 +127,7 @@ export const gradients = [
   },
   {
     name: "YouTube",
-    start: "rgb(229, 45, 39) ",
+    start: "rgb(229, 45, 39)",
     end: "rgb(179, 18, 23)",
     tags: ["rouge"],
   },
