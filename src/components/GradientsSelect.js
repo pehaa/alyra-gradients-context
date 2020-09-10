@@ -16,7 +16,7 @@ const GradientsSelect = (props) => {
         value={filter}
         onChange={handleSelectChange}
       >
-        <option value="all">Toutes</option>
+        <option value="all">Tous</option>
         {tags.map((el) => (
           <option key={el} value={el}>
             {el}
