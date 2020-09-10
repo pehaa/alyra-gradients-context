@@ -1,7 +1,8 @@
 import React, { useState } from "react"
+import { gradients as list } from "../gradients"
 
 const GradientsHeader = (props) => {
-  const { children, list } = props
+  const { children } = props
   const length = list.length
 
   const chooseGradient = () => Math.floor(Math.random() * length)

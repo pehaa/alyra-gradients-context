@@ -1,19 +1,20 @@
 import React from "react"
-import { gradients } from "./gradients"
-import GradientsList from "./components/GradientsList"
+import Gradients from "./components/Gradients"
 import GradientsHeader from "./components/GradientsHeader"
+import Footer from "./components/Footer"
 
 function App() {
   return (
     <div className="App">
-      <GradientsHeader list={gradients}>
+      <GradientsHeader>
         <h1 className="display-1">Alyra Gradients</h1>
         <p className="tagline">Ultime collection de plus beaux dégradés</p>
       </GradientsHeader>
-      <section className="container">
+      <main className="container">
         <h1 className="text-center my-4">Alyra Gradients</h1>
-        <GradientsList list={gradients} />
-      </section>
+        <Gradients />
+      </main>
+      <Footer />
     </div>
   )
 }
