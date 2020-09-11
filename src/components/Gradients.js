@@ -14,7 +14,11 @@ const Gradients = () => {
   return (
     <>
       <GradientsSelect tags={allTags} filter={filter} setFilter={setFilter} />
-      <GradientsList list={displayedList} />
+      <GradientsList
+        list={displayedList}
+        filter={filter}
+        setFilter={setFilter}
+      />
     </>
   )
 }
