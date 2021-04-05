@@ -7,7 +7,7 @@ const GradientTags = ({ tags, filter, setFilter }) => {
           <button
             key={el}
             type="button"
-            className={`btn btn-sm mr-2 mb-2 ${className}`}
+            className={`btn btn-sm me-2 mb-2 ${className}`}
             disabled={filter === el}
             onClick={() => setFilter(el)}
           >
