@@ -1,5 +1,8 @@
 import React, { useState } from "react"
 import { gradients as list } from "../gradients"
+import { ReactComponent as SvgToggle } from "bootstrap-icons/icons/arrow-clockwise.svg"
+import { ReactComponent as Next } from "bootstrap-icons/icons/arrow-right.svg"
+import { ReactComponent as Prev } from "bootstrap-icons/icons/arrow-left.svg"
 
 const GradientsHeader = (props) => {
   const { children } = props
@@ -11,6 +14,12 @@ const GradientsHeader = (props) => {
   const handleReloadClick = () => {
     setRandomGradient(chooseGradient)
   }
+  const handleNextClick = () => {
+    setRandomGradient(randomGradient === length - 1 ? 0 : randomGradient + 1)
+  }
+  const handlePrevClick = () => {
+    setRandomGradient(randomGradient === 0 ? length - 1 : randomGradient - 1)
+  }
 
   const style = {
     backgroundImage: `linear-gradient(to right, ${list[randomGradient].start}, ${list[randomGradient].end})`,
@@ -21,26 +30,26 @@ const GradientsHeader = (props) => {
       <button
         aria-label="Clicker pour changer le background"
         type="button"
-        className="btn btn-outline-light"
+        className="btn btn-outline-light m-1"
+        onClick={handlePrevClick}
+      >
+        <Prev />
+      </button>
+      <button
+        aria-label="Clicker pour changer le background"
+        type="button"
+        className="btn btn-outline-light m-1"
         onClick={handleReloadClick}
       >
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 16 16"
-          className="bi bi-arrow-clockwise"
-          fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fillRule="evenodd"
-            d="M3.17 6.706a5 5 0 0 1 7.103-3.16.5.5 0 1 0 .454-.892A6 6 0 1 0 13.455 5.5a.5.5 0 0 0-.91.417 5 5 0 1 1-9.375.789z"
-          />
-          <path
-            fillRule="evenodd"
-            d="M8.147.146a.5.5 0 0 1 .707 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 1 1-.707-.708L10.293 3 8.147.854a.5.5 0 0 1 0-.708z"
-          />
-        </svg>
+        <SvgToggle />
+      </button>
+      <button
+        aria-label="Clicker pour changer le background"
+        type="button"
+        className="btn btn-outline-light m-1"
+        onClick={handleNextClick}
+      >
+        <Next />
       </button>
     </header>
   )
