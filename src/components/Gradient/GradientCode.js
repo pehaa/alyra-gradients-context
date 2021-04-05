@@ -1,5 +1,3 @@
-import React from "react"
-
 const GradientCode = ({ colorStart, colorEnd }) => {
   return (
     <code>

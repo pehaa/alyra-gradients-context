@@ -1,5 +1,3 @@
-import React from "react"
-
 const GradientsSelect = (props) => {
   const { filter, tags, setFilter } = props
   const handleSelectChange = (e) => {

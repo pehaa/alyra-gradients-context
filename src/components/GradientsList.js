@@ -1,4 +1,3 @@
-import React from "react"
 import Gradient from "./Gradient"
 
 const GradientsList = (props) => {

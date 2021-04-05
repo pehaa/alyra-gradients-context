@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import { gradients as list } from "../gradients"
 import { ReactComponent as SvgToggle } from "bootstrap-icons/icons/arrow-clockwise.svg"
 import { ReactComponent as Next } from "bootstrap-icons/icons/arrow-right.svg"
@@ -22,13 +22,13 @@ const GradientsHeader = (props) => {
   }
 
   const style = {
-    backgroundImage: `linear-gradient(to right, ${list[randomGradient].start}, ${list[randomGradient].end})`,
+    backgroundImage: `linear-gradient(to right, ${list[randomGradient].start}, ${list[randomGradient].end})`
   }
   return (
     <header className="text-center bg-dark text-white py-5 mb-5" style={style}>
       {children}
       <button
-        aria-label="Clicker pour changer le background"
+        aria-label="Clicker pour afficher le dégradé précédant"
         type="button"
         className="btn btn-outline-light m-1"
         onClick={handlePrevClick}
@@ -36,7 +36,7 @@ const GradientsHeader = (props) => {
         <Prev />
       </button>
       <button
-        aria-label="Clicker pour changer le background"
+        aria-label="Clicker pour changer le dégradé"
         type="button"
         className="btn btn-outline-light m-1"
         onClick={handleReloadClick}
@@ -44,7 +44,7 @@ const GradientsHeader = (props) => {
         <SvgToggle />
       </button>
       <button
-        aria-label="Clicker pour changer le background"
+        aria-label="Clicker pour afficher le dégradé suivant"
         type="button"
         className="btn btn-outline-light m-1"
         onClick={handleNextClick}

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import { gradients, uniqueTags as allTags } from "../gradients"
 import GradientsList from "./GradientsList"
 import GradientsSelect from "./GradientsSelect"

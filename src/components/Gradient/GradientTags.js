@@ -1,6 +1,3 @@
-import React from "react"
-import "./gradient.css"
-
 const GradientTags = ({ tags, filter, setFilter }) => {
   return (
     <div className="mt-3">

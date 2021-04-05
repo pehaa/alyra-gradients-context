@@ -1,4 +1,3 @@
-import React from "react"
 import "./gradient.css"
 
 const GradientPill = ({ colorStart, colorEnd }) => {

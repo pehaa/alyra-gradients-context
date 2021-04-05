@@ -1,4 +1,3 @@
-import React from "react"
 import Gradients from "./components/Gradients"
 import GradientsHeader from "./components/GradientsHeader"
 import Footer from "./components/Footer"
