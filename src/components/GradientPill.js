@@ -1,5 +1,4 @@
 const GradientPill = ({ colorStart, colorEnd }) => {
-  console.log(`Pill renders ${colorStart}, ${colorEnd})`)
   const linearGradient = `linear-gradient(to right, ${colorStart}, ${colorEnd})`
   return (
     <div

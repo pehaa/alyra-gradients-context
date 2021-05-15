@@ -1,4 +1,3 @@
-import React from "react"
 import GradientTitle from "./GradientTitle"
 import GradientPill from "./GradientPill"
 import GradientCode from "./GradientCode"
