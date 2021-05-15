@@ -1,5 +1,3 @@
-import "./gradient.css"
-
 const GradientPill = ({ colorStart, colorEnd }) => {
   const linearGradient = `linear-gradient(to right, ${colorStart}, ${colorEnd})`
   return (
