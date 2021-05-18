@@ -1,6 +1,7 @@
-import React from "react"
+import {useFilter} from "../context/FilterContext"
 
-const GradientTagButton = ({ tag, filter, setFilter }) => {
+const GradientTagButton = ({ tag }) => {
+  const {filter, setFilter} = useFilter()
   const className = filter === tag ? "bg-light" : "bg-dark text-white"
   return (
     <button

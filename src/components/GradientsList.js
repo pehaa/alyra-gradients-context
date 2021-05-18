@@ -1,8 +1,10 @@
+import { useFilter } from "../context/FilterContext"
 import Gradient from "./Gradient"
 import { gradients } from "../gradients"
 
-const GradientsList = (props) => {
-  const { filter, setFilter } = props
+const GradientsList = () => {
+  const {filter} = useFilter()
+  
   const list = gradients.filter((el) => {
     if (filter === "all") {
       return true
@@ -20,8 +22,6 @@ const GradientsList = (props) => {
             colorEnd={end}
             name={name}
             tags={tags}
-            filter={filter}
-            setFilter={setFilter}
           />
         )
       })}

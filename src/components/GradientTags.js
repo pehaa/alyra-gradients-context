@@ -1,6 +1,6 @@
 import GradientTagButton from "./GradientTagButton"
 
-const GradientTags = ({ tags, filter, setFilter }) => {
+const GradientTags = ({ tags }) => {
   return (
     <div className="mt-3">
       {tags.sort().map((el) => {
@@ -8,8 +8,6 @@ const GradientTags = ({ tags, filter, setFilter }) => {
           <GradientTagButton
             key={el}
             tag={el}
-            filter={filter}
-            setFilter={setFilter}
           />
         )
       })}
